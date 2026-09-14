@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 24px;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+.fieldLabel {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.submitButton {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.row {
+    display: flex;
+    gap: 20px;
+}
+.row.field {
+    flex: 1;
+}

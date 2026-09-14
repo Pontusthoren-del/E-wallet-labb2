@@ -1,0 +1,8 @@
+.appContainer {
+    max-width: 600px;
+    margin: 40px auto;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    background-color: white;
+    border: black solid;
+}

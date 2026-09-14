@@ -1,0 +1,19 @@
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardWrapper {
+    overflow: hidden;
+    height: 68px;
+    border-radius: 16px 16px 0 0;
+}
+
+.cardWrapper:last-child {
+    height: auto;
+    border-radius: 16px;
+}
+
+.cardWrapper:not(:last-child) .logo {
+    display: none;
+}

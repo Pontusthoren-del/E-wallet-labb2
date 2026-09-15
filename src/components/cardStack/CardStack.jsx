@@ -11,11 +11,11 @@ function CardStack() {
 
     return (
         <div className={styles.stack}>
-            {filtered.map((card) => (
+            {filtered.map((card, index) => (
                 <div key={card.id} className={styles.cardWrapper}>
                     <Card
-                        key={card.id}
                         card={card}
+                        compact={index !== filtered.length - 1}
                         onClick={() => dispatch(setActiveCard(card.id))}
                     />
                 </div>

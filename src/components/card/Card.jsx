@@ -18,7 +18,7 @@ const vendorColors = {
     ninja: "rgb(57, 57, 57)",
 };
 
-function Card({ card, onClick }) {
+function Card({ card, onClick, compact = false }) {
     return (
         <div
             className={styles.card}
@@ -36,16 +36,18 @@ function Card({ card, onClick }) {
             <div className={styles.numberRow}>
                 <p>{card.cardNumber}</p>
             </div>
-            <div className={styles.bottomRow}>
-                <div>
-                    <p className={styles.label}>CARDHOLDER NAME</p>
-                    <p>{card.cardHolder}</p>
+            {!compact && (
+                <div className={styles.bottomRow}>
+                    <div>
+                        <p className={styles.label}>CARDHOLDER NAME</p>
+                        <p>{card.cardHolder}</p>
+                    </div>
+                    <div>
+                        <p className={styles.label}>VALID THRU</p>
+                        <p>{card.expiry}</p>
+                    </div>
                 </div>
-                <div>
-                    <p className={styles.label}>VALID THRU</p>
-                    <p>{card.expiry}</p>
-                </div>
-            </div>
+            )}
         </div>
     );
 }

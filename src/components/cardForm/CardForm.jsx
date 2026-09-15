@@ -42,6 +42,7 @@ function CardForm() {
                         className={styles.input}
                         type="text"
                         name="cardNumber"
+                        placeholder="CARDNUMBER"
                         value={formData.cardNumber}
                         onChange={(e) =>
                             setFormData({
@@ -58,6 +59,7 @@ function CardForm() {
                         className={styles.input}
                         type="text"
                         name="cardHolder"
+                        placeholder="CARDHOLDER NAME"
                         value={formData.cardHolder}
                         onChange={(e) =>
                             setFormData({
@@ -75,6 +77,7 @@ function CardForm() {
                             className={styles.input}
                             type="text"
                             name="expiry"
+                            placeholder="xx/xx"
                             value={formData.expiry}
                             onChange={(e) =>
                                 setFormData({
@@ -90,6 +93,7 @@ function CardForm() {
                             className={styles.input}
                             type="text"
                             name="cvv"
+                            placeholder="XXX"
                             value={formData.cvv}
                             onChange={(e) =>
                                 setFormData({

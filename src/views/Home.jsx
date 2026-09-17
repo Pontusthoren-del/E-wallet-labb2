@@ -16,6 +16,7 @@ function Home() {
     return (
         <div className={styles.wrapper}>
             <Top title="E-WALLET" />
+            <p className={styles.activeCardTop}>ACTIVE CARD</p>
             <div className={styles.activeCard}>
                 {activeCard ? (
                     <>

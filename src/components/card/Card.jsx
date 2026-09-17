@@ -27,11 +27,11 @@ function Card({ card, onClick, compact = false }) {
         >
             <div className={styles.topRow}>
                 <img src={chipIcon} alt="chip" className={styles.chip} />
-                <img
+                {card.vendor && <img
                     src={vendorIcons[card.vendor]}
                     alt={card.vendor}
                     className={styles.logo}
-                />
+                />}
             </div>
             <div className={styles.numberRow}>
                 <p>{card.cardNumber}</p>

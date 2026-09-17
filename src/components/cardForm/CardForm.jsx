@@ -34,11 +34,13 @@ function CardForm() {
 
     return (
         <div className={styles.wrapper}>
+            <p className={styles.newCardTop}>NEW CARD</p>
             <Card card={formData} />
             <form className={styles.form} onSubmit={handleSubmit}>
                 <div className={styles.field}>
                     <p className={styles.fieldLabel}>Card number</p>
                     <input
+                        required
                         className={styles.input}
                         type="text"
                         name="cardNumber"
@@ -56,6 +58,7 @@ function CardForm() {
                 <div className={styles.field}>
                     <p className={styles.fieldLabel}>Cardholder name</p>
                     <input
+                        required
                         className={styles.input}
                         type="text"
                         name="cardHolder"
@@ -74,6 +77,7 @@ function CardForm() {
                     <div className={styles.field}>
                         <p className={styles.fieldLabel}>Valid thru</p>
                         <input
+                            required
                             className={styles.input}
                             type="text"
                             name="expiry"
@@ -90,6 +94,7 @@ function CardForm() {
                     <div className={styles.field}>
                         <p className={styles.fieldLabel}>CVV</p>
                         <input
+                            required
                             className={styles.input}
                             type="text"
                             name="cvv"
@@ -107,6 +112,7 @@ function CardForm() {
                 <div className={styles.field}>
                     <p className={styles.fieldLabel}>Vendor</p>
                     <select
+                        required
                         className={styles.input}
                         name="vendor"
                         value={formData.vendor}

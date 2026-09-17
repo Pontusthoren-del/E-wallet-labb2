@@ -6,8 +6,12 @@
     width: 400px;
     padding: 24px;
     box-sizing: border-box;
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
 }
-
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
 .topRow {
     display: flex;
     justify-content: space-between;
@@ -38,4 +42,3 @@
     opacity: 0.75;
     text-transform: uppercase;
 }
-

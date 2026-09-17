@@ -6,3 +6,11 @@
 .cardWrapper:not(:last-child) {
     margin-bottom: -190px;
 }
+.cardWrapper {
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.cardWrapper:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
